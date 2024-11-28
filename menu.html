@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наше Меню - Pizzeria</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">PIZZERIA</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- Бургер-меню іконка -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+
+      <section id="menu" class="menu-section">
+        <h2>OUR MENU</h2>
+        <hr class="menu-divider">
+        <div class="menu-grid">
+            <!-- Перший рядок елементів меню -->
+            <div class="menu-item">
+                <img src="/Web/images/4chesse.jpg" alt="4 Сири">
+                <h3>4 Сири</h3>
+                <p>Сир Пармезан, Сир Дорблю, Сир Мармуровий,</p>
+                <p>Cир Моцарела, Соус Альфредо</p>
+            </div>
+            <div class="menu-item">
+                <img src="/Web/images/chiken.jpg" alt="Курка з сиром">
+                <h3>Курка з сиром</h3>
+                <p>Курка, Сир, Соус Томатний</p>
+            </div>
+            <div class="menu-item">
+                <img src="/Web/images/paperoni.jpg" alt="Папероні">
+                <h3>Папероні</h3>
+                <p>Соус Папероні, Пепероні, Моцарела</p>
+            </div>
+    
+            <!-- Другий рядок елементів меню -->
+            <div class="menu-item">
+                <img src="/Web/images/neopolitan.jpg" alt="Неаполітановська">
+                <h3>Неаполітановська</h3>
+                <p>Сир, помідори та пармезан</p>
+            </div>
+            <div class="menu-item">
+                <img src="/Web/images/margarita.jpg" alt="Маргарита">
+                <h3>Маргарита</h3>
+                <p>Соус Томатний, Моцарела(x2), Томати</p>
+            </div>
+            <div class="menu-item">
+                <img src="/Web/images/vegitarian.jpg" alt="Вегетаріанська">
+                <h3>Вегетаріанська</h3>
+                <p>Сир, гриби, маслини, оливки,</p>
+                <p>цибуля, орегано та зелений перець</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Pizzeria</h2>
+            </div>
+            <div class="footer-middle">
+                <nav>
+                    <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-right">
+                <p>Contact</p>
+                <div class="social-icons">
+                    <a href="#"><img src="/Web/images/facebook2.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="/Web/images/instagram.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

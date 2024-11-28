@@ -1,0 +1,219 @@
+/* Основні стилі */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Стилі для бургер-меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+    }
+
+    .nav-menu ul li a {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.menu-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+
+.menu-divider {
+    bottom: -10px; /* Відстань від тексту */
+    width: 370px; /* Ширина лінії */
+    height: 9px; /* Висота лінії */
+    background-color: #f2c94c;
+    margin: 50px auto;
+    border: none;
+    margin-top: -30px;
+}
+
+/* Сітка для меню */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Відстань між елементами */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item img {
+    width: 371px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    color: #f2c94c;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    bottom: -30px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-middle {
+    text-align: center;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Адаптивний дизайн для мобільних пристроїв */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item img {
+        width: 80%; /* Робимо зображення трохи більшим у відносному розмірі */
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}

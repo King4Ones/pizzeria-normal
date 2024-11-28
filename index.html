@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav-container">
+        <div class="logo">PIZZERIA</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#reviews">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- Бургер-меню іконка -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+        4    <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="/Web/video/istockphoto-180617222-640_adpp_is.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео.
+  </video>
+  <div class="hero-text">
+    <h1>PIZZERIA</h1>
+    <p>Ласкаво просимо до PIZZERIA!<br>
+      Тут кожна піца випікається за традиційним італійським рецептом у дров'яній печі. Свіжі інгредієнти, хрустка скоринка та затишна атмосфера роблять наше місце ідеальним для приємного відпочинку.
+      Скуштуйте справжню Італію у кожному шматочку!</p>
+  </div>
+</section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about-us">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>ABOUT US</h2>
+        <p>У PIZZERIA ми створюємо піцу з душею, використовуючи тільки найсвіжіші інгредієнти та справжні італійські рецепти. Наша місія – дарувати гостям незабутні смаки та затишок, який зробить кожен ваш візит особливим. Ми прагнемо стати улюбленим місцем для вас, де кожна страва – це частинка Італії, а кожен шматочок – свято для душі.</p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+      </div>
+      <div class="about-image">
+        <img src="/Web/images/about.jpg" alt="Pizzeria view">
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2 class="menu-title">OUR MENU</h2>
+    <div class="menu-items">
+        <!-- Блок меню №1 -->
+        <div class="menu-item">
+            <h3>Peperoni</h3>
+            <img src="/Web/images/paperoni.jpg" alt="Peperoni Pizza">
+            <div class="pizza-options">
+                <input type="radio" id="size1-30" name="size1" class="radio-custom" checked>
+                <label for="size1-30">30см</label>
+
+                <input type="radio" id="size1-35" name="size1" class="radio-custom">
+                <label for="size1-35">35см</label>
+
+                <input type="radio" id="size1-40" name="size1" class="radio-custom">
+                <label for="size1-40">40см</label>
+            </div>
+            <div class="price">200 грн</div>
+            <button class="order-btn">ЗАМОВИТИ</button>
+        </div>
+
+        <!-- Блок меню №2 -->
+        <div class="menu-item">
+            <h3>4 Cheese</h3>
+            <img src="/Web/images/4chesse.jpg" alt="4 Cheese Pizza">
+            <div class="pizza-options">
+                <input type="radio" id="size2-30" name="size2" class="radio-custom" checked>
+                <label for="size2-30">30см</label>
+
+                <input type="radio" id="size2-35" name="size2" class="radio-custom">
+                <label for="size2-35">35см</label>
+
+                <input type="radio" id="size2-40" name="size2" class="radio-custom">
+                <label for="size2-40">40см</label>
+            </div>
+            <div class="price">220 грн</div>
+            <button class="order-btn">ЗАМОВИТИ</button>
+        </div>
+
+        <!-- Блок меню №3 -->
+        <div class="menu-item">
+            <h3>Margherita</h3>
+            <img src="/Web/images/margarita.jpg" alt="Margherita Pizza">
+            <div class="pizza-options">
+                <input type="radio" id="size3-30" name="size3" class="radio-custom" checked>
+                <label for="size3-30">30см</label>
+
+                <input type="radio" id="size3-35" name="size3" class="radio-custom">
+                <label for="size3-35">35см</label>
+
+                <input type="radio" id="size3-40" name="size3" class="radio-custom">
+                <label for="size3-40">40см</label>
+            </div>
+            <div class="price">180 грн</div>
+            <button class="order-btn">ЗАМОВИТИ</button>
+        </div>
+    </div>
+</section>
+
+<!-- Відгуки Section -->
+<section class="reviews">
+    <h2 class="reviews-title">Відгуки</h2>
+    <div class="review-container">
+        <div class="review-item">
+            <img src="/Web/images/olga.jpg" alt="Ольга" class="review-photo">
+            <div class="review-text">
+                <h3>Ольга</h3>
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>"Це найкраща піцерія, яку я відвідувала! Атмосфера затишна, а піца неймовірна. Відчувається справжній італійський дух у кожній страві."</p>
+            </div>
+        </div>
+        <div class="review-item">
+            <img src="/Web/images/taras.jpg" alt="Тарас" class="review-photo">
+            <div class="review-text">
+                <h3>Тарас</h3>
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>"Це найкраща піцерія, яку я відвідував! Атмосфера затишна, а піца неймовірна. Відчувається справжній італійський дух у кожній страві."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us-->
+<section class="contact-us">
+  <h2 class="contact-title">Contact Us</h2>
+  <form action="#" method="post" class="contact-form">
+      <fieldset>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </fieldset>
+      <fieldset>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </fieldset>
+      <fieldset>
+          <label for="date">Preferred Contact Date</label>
+          <input type="date" id="date" name="date" required>
+      </fieldset>
+      <fieldset>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      </fieldset>
+      <button type="submit" class="submit-button">Submit</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>Pizzeria</h2>
+        </div>
+        <div class="footer-middle">
+            <nav>
+                <ul class="footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-right">
+            <p>Contact</p>
+            <div class="social-icons">
+                <a href="#"><img src="/Web/images/facebook2.jpg" alt="Facebook"></a>
+                <a href="#"><img src="/Web/images/instagram.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
